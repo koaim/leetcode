@@ -30,19 +30,16 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 		}
 
 		var v1, v2 int
-
 		if l1 != nil {
 			v1, l1 = l1.Val, l1.Next
 		}
-
 		if l2 != nil {
 			v2, l2 = l2.Val, l2.Next
 		}
 
 		v := v1 + v2 + s
 		if v >= 10 {
-			v = v - 10
-			s = 1
+			v, s = v-10, 1
 		} else {
 			s = 0
 		}
