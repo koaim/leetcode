@@ -1,6 +1,8 @@
 package leetcode
 
-/*Given two strings s and t, return true if t is an anagram of s, and false otherwise.*/
+/*
+Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+*/
 
 func isAnagram(s string, t string) bool {
 	m := map[rune]int{}
