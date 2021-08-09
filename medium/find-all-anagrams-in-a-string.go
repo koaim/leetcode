@@ -36,7 +36,6 @@ func findAnagrams(s string, p string) []int {
 			if b {
 				res = append(res, i)
 			}
-
 		}
 	}
 
