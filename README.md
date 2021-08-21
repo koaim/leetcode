@@ -12,6 +12,7 @@
 - [Two Sum](easy/two-sum.go)
 - [Valid Anagram](easy/valid-anagram.go)
 - [Valid Parentheses](easy/valid-parentheses.go)
+- [Balanced Binary Tree](easy/balanced-binary-tree.go)
 
 ### Medium
 - [Add Two Numbers](medium/add-two-numbers.go)
@@ -24,7 +25,6 @@
 - [Search a 2D Matrix](medium/search-a-2d-matrix.go)
 - [Search in Rotated Sorted Array](medium/search-in-rotated-sorted-array.go)
 - [ZigZag Conversion](medium/zigzag-conversion.go)
-- [Balanced Binary Tree](medium/balanced-binary-tree.go)
 
 ### Hard
 - [Median of Two Sorted Arrays](hard/median-of-two-sorted-arrays.go)
