@@ -25,6 +25,7 @@
 - [Search a 2D Matrix](medium/search-a-2d-matrix.go)
 - [Search in Rotated Sorted Array](medium/search-in-rotated-sorted-array.go)
 - [ZigZag Conversion](medium/zigzag-conversion.go)
+- [Path Sum II](medium/path-sum-ii.go)
 
 ### Hard
 - [Median of Two Sorted Arrays](hard/median-of-two-sorted-arrays.go)
