@@ -31,6 +31,8 @@ func dfs(n *TreeNode, path []int, res *[][]int, sum, targetSum int) {
 		*res = append(*res, path)
 	}
 
-	dfs(n.Left, append(make([]int, 0, len(path)), path...), res, sum, targetSum)
-	dfs(n.Right, append(make([]int, 0, len(path)), path...), res, sum, targetSum)
+	p := append(make([]int, 0, len(path)), path...)
+
+	dfs(n.Left, p, res, sum, targetSum)
+	dfs(n.Right, p, res, sum, targetSum)
 }
