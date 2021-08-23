@@ -21,13 +21,9 @@ func hasCycle(head *ListNode) bool {
 	m := map[*ListNode]bool{}
 	hasCycle := false
 
-	for {
+	for head != nil {
 		if _, ok := m[head]; ok {
 			hasCycle = true
-			break
-		}
-
-		if head.Next == nil {
 			break
 		}
 
