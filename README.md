@@ -27,6 +27,7 @@
 - [ZigZag Conversion](medium/zigzag-conversion.go)
 - [Path Sum II](medium/path-sum-ii.go)
 - [Number of Islands](medium/number-of-islands.go)
+- [Remove Nth Node From End of List](medium/remove-nth-node-from-end-of-list.go)
 
 ### Hard
 - [Median of Two Sorted Arrays](hard/median-of-two-sorted-arrays.go)
