@@ -22,14 +22,10 @@ func removeNthFromEnd(head *ListNode, n int) *ListNode {
 	cur := head
 	var prev *ListNode
 
-	for {
+	for t != nil {
 		t = t.Next
 		prev = cur
 		cur = cur.Next
-
-		if t == nil {
-			break
-		}
 	}
 
 	prev.Next = cur.Next
