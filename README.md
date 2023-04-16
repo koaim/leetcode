@@ -15,6 +15,7 @@
 - [Balanced Binary Tree](easy/balanced-binary-tree.go)
 - [Longest Common Prefix](easy/longest-common-prefix.go)
 - [Roman to Integer](easy/roman-to-integer.go)
+- [Remove Duplicates from Sorted Array](easy/remove-duplicates-from-sorted-array.go)
 
 ### Medium
 - [Add Two Numbers](medium/add-two-numbers.go)
