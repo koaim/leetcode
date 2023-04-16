@@ -13,6 +13,8 @@
 - [Valid Anagram](easy/valid-anagram.go)
 - [Valid Parentheses](easy/valid-parentheses.go)
 - [Balanced Binary Tree](easy/balanced-binary-tree.go)
+- [Longest Common Prefix](easy/longest-common-prefix.go)
+- [Roman to Integer](easy/roman-to-integer.go)
 
 ### Medium
 - [Add Two Numbers](medium/add-two-numbers.go)
