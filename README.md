@@ -33,6 +33,7 @@
 - [Number of Islands](medium/number-of-islands.go)
 - [Remove Nth Node From End of List](medium/remove-nth-node-from-end-of-list.go)
 - [Letter Combinations of a Phone Number](medium/letter-combinations-of-a-phone-number.go)
+- [3Sum](medium/3sum.go)
 
 ### Hard
 - [Median of Two Sorted Arrays](hard/median-of-two-sorted-arrays.go)
