@@ -16,6 +16,7 @@
 - [Longest Common Prefix](easy/longest-common-prefix.go)
 - [Roman to Integer](easy/roman-to-integer.go)
 - [Remove Duplicates from Sorted Array](easy/remove-duplicates-from-sorted-array.go)
+- [Remove Element](easy/remove-element.go)
 
 ### Medium
 - [Add Two Numbers](medium/add-two-numbers.go)
