@@ -18,6 +18,7 @@
 - [Remove Duplicates from Sorted Array](easy/remove-duplicates-from-sorted-array.go)
 - [Remove Element](easy/remove-element.go)
 - [Find the Index of the First Occurrence in a String](easy/find-the-index-of-the-first-occurrence-in-a-string.go)
+- [Search Insert Position](easy/search-insert-position.go)
 
 ### Medium
 - [Add Two Numbers](medium/add-two-numbers.go)
