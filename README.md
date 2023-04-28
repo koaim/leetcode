@@ -39,6 +39,7 @@
 - [3Sum Closest](medium/3sum-closest.go)
 - [Generate Parentheses](medium/generate-parentheses.go)
 - [Find First and Last Position of Element in Sorted Array](medium/find-first-and-last-position-of-element-in-sorted-array.go)
+- [Valid Sudoku](medium/valid-sudoku.go)
 
 ### Hard
 - [Median of Two Sorted Arrays](hard/median-of-two-sorted-arrays.go)
