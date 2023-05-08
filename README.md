@@ -41,6 +41,7 @@
 - [Find First and Last Position of Element in Sorted Array](medium/find-first-and-last-position-of-element-in-sorted-array.go)
 - [Valid Sudoku](medium/valid-sudoku.go)
 - [Permutations](medium/permutations.go)
+- [Maximum Subarray](medium/maximum-subarray.go)
 
 ### Hard
 - [Median of Two Sorted Arrays](hard/median-of-two-sorted-arrays.go)

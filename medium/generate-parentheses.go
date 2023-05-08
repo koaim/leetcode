@@ -25,3 +25,5 @@ func generate(s string, open, closed, count int, result *[]string) {
 		}
 	}
 }
+
+
