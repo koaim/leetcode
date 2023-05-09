@@ -42,6 +42,7 @@
 - [Valid Sudoku](medium/valid-sudoku.go)
 - [Permutations](medium/permutations.go)
 - [Maximum Subarray](medium/maximum-subarray.go)
+- [LRU Cache](medium/lru-cache.go)
 
 ### Hard
 - [Median of Two Sorted Arrays](hard/median-of-two-sorted-arrays.go)
