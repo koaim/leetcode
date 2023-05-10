@@ -45,6 +45,7 @@
 - [Maximum Subarray](medium/maximum-subarray.go)
 - [LRU Cache](medium/lru-cache.go)
 - [Linked List Cycle II](medium/linked-list-cycle-ii.go)
+- [Find the Duplicate Number](medium/find-the-duplicate-number.go)
 
 ### Hard
 - [Median of Two Sorted Arrays](hard/median-of-two-sorted-arrays.go)
