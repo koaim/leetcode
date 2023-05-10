@@ -33,3 +33,20 @@ func hasCycle(head *ListNode) bool {
 
 	return hasCycle
 }
+
+//более оптимальное, но менее интуитивное решение с затратами O(1) по памяти.
+func hasCycle2(head *ListNode) bool {
+	if head == nil || head.Next == nil {
+		return false
+	}
+
+	slow := head
+	fast := head.Next
+
+	for fast.Next != nil && fast.Next.Next != nil && slow != fast {
+		slow = slow.Next
+		fast = fast.Next.Next
+	}
+
+	return slow == fast
+}
