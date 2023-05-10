@@ -20,6 +20,7 @@
 - [Find the Index of the First Occurrence in a String](easy/find-the-index-of-the-first-occurrence-in-a-string.go)
 - [Search Insert Position](easy/search-insert-position.go)
 - [Valid Palindrome](easy/valid-palindrome.go)
+- [Determine Whether Matrix Can Be Obtained By Rotation](easy/determine-whether-matrix-can-be-obtained-by-rotation.go)
 
 ### Medium
 - [Add Two Numbers](medium/add-two-numbers.go)
