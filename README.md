@@ -21,6 +21,7 @@
 - [Search Insert Position](easy/search-insert-position.go)
 - [Valid Palindrome](easy/valid-palindrome.go)
 - [Determine Whether Matrix Can Be Obtained By Rotation](easy/determine-whether-matrix-can-be-obtained-by-rotation.go)
+- [Squares of a Sorted Array](easy/squares-of-a-sorted-array.go)
 
 ### Medium
 - [Add Two Numbers](medium/add-two-numbers.go)
