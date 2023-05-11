@@ -49,6 +49,7 @@
 - [Linked List Cycle II](medium/linked-list-cycle-ii.go)
 - [Find the Duplicate Number](medium/find-the-duplicate-number.go)
 - [Rotate Image](medium/rotate-image.go)
+- [Min Stack](medium/min-stack.go)
 
 ### Hard
 - [Median of Two Sorted Arrays](hard/median-of-two-sorted-arrays.go)
