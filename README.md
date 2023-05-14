@@ -52,6 +52,7 @@
 - [Rotate Image](medium/rotate-image.go)
 - [Min Stack](medium/min-stack.go)
 - [Word Search](medium/word-search.go)
+- [Implement Trie (Prefix Tree)](medium/implement-trie-prefix-tree.go)
 
 ### Hard
 - [Median of Two Sorted Arrays](hard/median-of-two-sorted-arrays.go)
