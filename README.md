@@ -53,6 +53,7 @@
 - [Min Stack](medium/min-stack.go)
 - [Word Search](medium/word-search.go)
 - [Implement Trie (Prefix Tree)](medium/implement-trie-prefix-tree.go)
+- [Product of Array Except Self](medium/product-of-array-except-self.go)
 
 ### Hard
 - [Median of Two Sorted Arrays](hard/median-of-two-sorted-arrays.go)
