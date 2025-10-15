@@ -23,6 +23,7 @@
 - [Determine Whether Matrix Can Be Obtained By Rotation](easy/determine-whether-matrix-can-be-obtained-by-rotation.go)
 - [Squares of a Sorted Array](easy/squares-of-a-sorted-array.go)
 - [Contains Duplicate](easy/contains-duplicate.go)
+- [Missing Number](easy/missing-number.go)
 
 ### Medium
 - [Add Two Numbers](medium/add-two-numbers.go)
@@ -54,6 +55,7 @@
 - [Word Search](medium/word-search.go)
 - [Implement Trie (Prefix Tree)](medium/implement-trie-prefix-tree.go)
 - [Product of Array Except Self](medium/product-of-array-except-self.go)
+- [House Robber](medium/house-robber.go)
 
 ### Hard
 - [Median of Two Sorted Arrays](hard/median-of-two-sorted-arrays.go)

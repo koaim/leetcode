@@ -25,11 +25,3 @@ func intersect(nums1 []int, nums2 []int) []int {
 
 	return res
 }
-
-func min(a, b int) int {
-	if a < b {
-		return a
-	}
-
-	return b
-}

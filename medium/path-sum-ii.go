@@ -1,4 +1,4 @@
-package main
+package leetcode
 
 /*
 Given the root of a binary tree and an integer targetSum.
