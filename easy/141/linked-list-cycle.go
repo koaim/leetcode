@@ -14,28 +14,6 @@ type ListNode struct {
 }
 
 func hasCycle(head *ListNode) bool {
-	if head == nil {
-		return false
-	}
-
-	m := map[*ListNode]bool{}
-	hasCycle := false
-
-	for head != nil {
-		if _, ok := m[head]; ok {
-			hasCycle = true
-			break
-		}
-
-		m[head] = true
-		head = head.Next
-	}
-
-	return hasCycle
-}
-
-//более оптимальное, но менее интуитивное решение с затратами O(1) по памяти.
-func hasCycle2(head *ListNode) bool {
 	if head == nil || head.Next == nil {
 		return false
 	}

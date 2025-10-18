@@ -1,5 +1,10 @@
 package leetcode
 
+type ListNode struct {
+	Val  int
+	Next *ListNode
+}
+
 func middleNode(head *ListNode) *ListNode {
 	slow, fast := head, head
 
@@ -7,4 +12,6 @@ func middleNode(head *ListNode) *ListNode {
 		slow = slow.Next
 		fast = fast.Next.Next
 	}
+
+	return slow
 }

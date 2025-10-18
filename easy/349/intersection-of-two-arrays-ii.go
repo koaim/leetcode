@@ -1,5 +1,10 @@
 package leetcode
 
+/*
+Given two integer arrays nums1 and nums2, return an array of their intersection.
+Each element in the result must be unique and you may return the result in any order.
+*/
+
 func intersect(nums1 []int, nums2 []int) []int {
 	m1 := make(map[int]int, len(nums1))
 	m2 := make(map[int]int, len(nums2))

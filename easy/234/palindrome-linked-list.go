@@ -1,5 +1,11 @@
 package leetcode
 
+type ListNode struct {
+	Val  int
+	Next *ListNode
+}
+
+/* Given the head of a singly linked list, return true if it is a palindrome or false otherwise. */
 func isPalindrome(head *ListNode) bool {
 	if head == nil {
 		return false
