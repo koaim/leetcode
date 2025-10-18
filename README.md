@@ -24,6 +24,8 @@
 - [Squares of a Sorted Array](easy/squares-of-a-sorted-array.go)
 - [Contains Duplicate](easy/contains-duplicate.go)
 - [Missing Number](easy/missing-number.go)
+- [Convert 1D Array Into 2D Array](easy/convert-1d-array-into-2d-array.go)
+- [Move Zeroes](easy/moze-zeroes.go)
 
 ### Medium
 - [Add Two Numbers](medium/add-two-numbers.go)
@@ -56,6 +58,7 @@
 - [Implement Trie (Prefix Tree)](medium/implement-trie-prefix-tree.go)
 - [Product of Array Except Self](medium/product-of-array-except-self.go)
 - [House Robber](medium/house-robber.go)
+- [Set Matrix Zeroes](medium/set-matrix-zero.go)
 
 ### Hard
 - [Median of Two Sorted Arrays](hard/median-of-two-sorted-arrays.go)

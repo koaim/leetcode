@@ -8,35 +8,31 @@ The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit int
 You must write an algorithm that runs in O(n) time and without using the division operation.
 */
 func productExceptSelf(nums []int) []int {
-	prefix := make([]int, len(nums))
+	zeroCount := 0
 	product := 1
 
-	for i := 0; i < len(nums); i++ {
-		product = product * nums[i]
-		prefix[i] = product
-	}
-
-	postfix := make([]int, len(nums))
-	product = 1
-	for i := 0; i < len(nums); i++ {
-		product = product * nums[len(nums)-1-i]
-		postfix[len(nums)-1-i] = product
-	}
-
-	result := make([]int, len(nums))
-	for i := 0; i < len(nums); i++ {
-		pre := 1
-		if i > 0 {
-			pre = prefix[i-1]
+	for _, v := range nums {
+		if v == 0 {
+			zeroCount++
+		} else {
+			product *= v
 		}
-
-		post := 1
-		if i != len(nums)-1 {
-			post = postfix[i+1]
-		}
-
-		result[i] = pre * post
 	}
 
-	return result
+	if zeroCount > 1 {
+		return make([]int, len(nums))
+	}
+
+	res := make([]int, len(nums))
+	for i, v := range nums {
+		if zeroCount == 0 {
+			res[i] = product / v
+		} else if v == 0 {
+			res[i] = product
+		} else {
+			res[i] = 0
+		}
+	}
+
+	return res
 }
