@@ -9,17 +9,8 @@ You must not use any built-in exponent function or operator.
 func mySqrt(x int) int {
 	var res int
 
-	i := 1
-	for {
-		if i*i < x {
-			res = i
-			i++
-		} else if i*i == x {
-			res = i
-			break
-		} else {
-			break
-		}
+	for i := 1; i*i <= x; i++ {
+		res = i
 	}
 
 	return res
