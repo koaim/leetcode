@@ -20,7 +20,7 @@ func simplifyPath(path string) string {
 		}
 	}
 
-	return "/" + strings.Join(s.val, "/")
+	return "/" + strings.Join(s.Val(), "/")
 }
 
 type Stack struct {
@@ -39,6 +39,6 @@ func (s *Stack) Pop() {
 	s.val = s.val[:len(s.val)-1]
 }
 
-func (s *Stack) Len() int {
-	return len(s.val)
+func (s *Stack) Val() []string {
+	return s.val
 }
