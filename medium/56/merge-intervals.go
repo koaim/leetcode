@@ -25,9 +25,7 @@ func merge(intervals [][]int) [][]int {
 	var i int
 	for i != len(intervals)-1 {
 		if intervals[i+1][0] >= intervals[i][0] && intervals[i+1][0] <= intervals[i][1] {
-			start := min(intervals[i][0], intervals[i+1][0])
-			end := max(intervals[i][1], intervals[i+1][1])
-			intervals[i] = []int{start, end}
+			intervals[i] = []int{intervals[i][0], max(intervals[i][1], intervals[i+1][1])}
 			intervals = slices.Delete(intervals, i+1, i+2)
 		} else {
 			i++

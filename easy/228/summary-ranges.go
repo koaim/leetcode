@@ -15,21 +15,19 @@ func summaryRanges(nums []int) []string {
 	var prev int
 
 	for _, v := range nums {
-		vv := v
 		if start == nil {
-			start = &vv
-		} else if (vv - prev) == 1 {
-			end = &vv
+			start = &v
+		} else if (v - prev) == 1 {
+			end = &v
 		} else {
 			if end != nil {
 				res = append(res, fmt.Sprintf("%v->%v", *start, *end))
 			} else {
 				res = append(res, fmt.Sprintf("%v", *start))
 			}
-			start, end = &vv, nil
+			start, end = &v, nil
 		}
-
-		prev = vv
+		prev = v
 	}
 
 	if start != nil && end != nil {
