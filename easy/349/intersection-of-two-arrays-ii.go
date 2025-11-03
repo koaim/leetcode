@@ -4,27 +4,22 @@ package leetcode
 Given two integer arrays nums1 and nums2, return an array of their intersection.
 Each element in the result must be unique and you may return the result in any order.
 */
-
-func intersect(nums1 []int, nums2 []int) []int {
-	m1 := make(map[int]int, len(nums1))
-	m2 := make(map[int]int, len(nums2))
-
+func intersection(nums1 []int, nums2 []int) []int {
+	numsMap1 := map[int]struct{}{}
 	for _, v := range nums1 {
-		m1[v] += 1
+		numsMap1[v] = struct{}{}
 	}
 
+	numsMap2 := map[int]struct{}{}
 	for _, v := range nums2 {
-		m2[v] += 1
+		numsMap2[v] = struct{}{}
 	}
 
-	res := make([]int, 0, len(nums1)+len(nums2))
-	for k, v := range m1 {
-		v1, ok := m2[k]
+	var res []int
+	for k := range numsMap1 {
+		_, ok := numsMap2[k]
 		if ok {
-			r := min(v, v1)
-			for i := 0; i < r; i++ {
-				res = append(res, k)
-			}
+			res = append(res, k)
 		}
 	}
 
