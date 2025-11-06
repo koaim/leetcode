@@ -8,18 +8,24 @@ The final sorted array should not be returned by the function, but instead be st
 To accommodate this, nums1 has a length of m + n, where the first m elements denote the elements that should be merged, and the last n elements are set to 0 and should be ignored. nums2 has a length of n.
 */
 func merge(nums1 []int, m int, nums2 []int, n int) {
-	k := m + n - 1
-	i := m - 1
-	j := n - 1
+	l := m - 1
+	r := n - 1
+	p := m + n - 1
 
-	for j >= 0 {
-		if i >= 0 && nums1[i] > nums2[j] {
-			nums1[k] = nums1[i]
-			i--
+	for r >= 0 && l >= 0 {
+		if nums1[l] > nums2[r] {
+			nums1[p] = nums1[l]
+			l--
 		} else {
-			nums1[k] = nums2[j]
-			j--
+			nums1[p] = nums2[r]
+			r--
 		}
-		k--
+		p--
+	}
+
+	for r >= 0 {
+		nums1[p] = nums2[r]
+		p--
+		r--
 	}
 }
