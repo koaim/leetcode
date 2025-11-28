@@ -6,12 +6,12 @@ Given an integer array nums, rotate the array to the right by k steps, where k i
 func rotate(nums []int, k int) {
 	i := 0
 	for i < k {
-		shiftOne(nums)
+		rotateOne(nums)
 		i++
 	}
 }
 
-func shiftOne(a []int) {
+func rotateOne(a []int) {
 	if len(a) <= 1 {
 		return
 	}
