@@ -31,15 +31,14 @@ func getIntersectionNode(headA, headB *ListNode) *ListNode {
 	}
 
 	currA, currB = headA, headB
+	rotate := max(lenB, lenA) - min(lenB, lenA)
 	i := 0
 	if lenB > lenA {
-		rotate := lenB - lenA
 		for i != rotate {
 			currB = currB.Next
 			i++
 		}
 	} else if lenA > lenB {
-		rotate := lenA - lenB
 		for i != rotate {
 			currA = currA.Next
 			i++
