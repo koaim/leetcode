@@ -22,5 +22,6 @@ func main() {
     a := []int{1,2,3} //len(a) == 3
     fmt.Println(a[3:]) //выведется пустой массив
     fmt.Println(a[3]) //паника
+    fmt.Println(a[4:]) //паника
 }
 ```
