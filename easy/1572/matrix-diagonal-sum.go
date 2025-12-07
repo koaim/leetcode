@@ -10,10 +10,8 @@ func diagonalSum(mat [][]int) int {
 	sum := 0
 
 	for i := 0; i < len(mat); i++ {
-		if left == right {
-			sum += mat[i][left]
-		} else {
-			sum += mat[i][left]
+		sum += mat[i][left]
+		if left != right {
 			sum += mat[i][right]
 		}
 
