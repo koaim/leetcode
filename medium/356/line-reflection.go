@@ -22,10 +22,10 @@ func isReflected(points [][]int) bool {
 		set[[2]int{x, y}] = struct{}{}
 	}
 
-	xSim := float64(minX+maxX) / 2.0
+	axis := float64(minX+maxX) / 2.0
 
 	for _, v := range points {
-		reflected := reflectedPoint(v, xSim)
+		reflected := reflectedPoint(v, axis)
 		if _, ok := set[reflected]; !ok {
 			return false
 		}
