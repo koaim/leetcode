@@ -17,7 +17,7 @@ You must write an algorithm that uses only constant extra space.
 Note: The characters in the array beyond the returned length do not matter and should be ignored.
 */
 func compress(chars []byte) int {
-	var i, idx int
+	var i, newLen int
 
 	for i < len(chars) {
 		curr := chars[i]
@@ -28,16 +28,16 @@ func compress(chars []byte) int {
 			i++
 		}
 
-		chars[idx] = curr
-		idx++
+		chars[newLen] = curr
+		newLen++
 
 		if count > 1 {
 			for _, v := range []byte(strconv.Itoa(count)) {
-				chars[idx] = v
-				idx++
+				chars[newLen] = v
+				newLen++
 			}
 		}
 	}
 
-	return idx
+	return newLen
 }
