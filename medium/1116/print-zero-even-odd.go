@@ -20,14 +20,11 @@ func NewZeroEvenOdd(n int) *ZeroEvenOdd {
 }
 
 func (z *ZeroEvenOdd) Zero(printNumber func(int)) {
-	for v := 0; v < z.n; v++ {
+	for i := 1; i <= z.n; i++ {
 		<-z.canZero
+		printNumber(0)
 
-		if v != z.n {
-			printNumber(0)
-		}
-
-		if (v+1)%2 == 0 {
+		if i%2 == 0 {
 			z.canEven <- 1
 		} else {
 			z.canOdd <- 1
@@ -36,20 +33,20 @@ func (z *ZeroEvenOdd) Zero(printNumber func(int)) {
 }
 
 func (z *ZeroEvenOdd) Even(printNumber func(int)) {
-	for v := 1; v <= z.n; v++ {
-		if (v % 2) == 0 {
+	for i := 1; i <= z.n; i++ {
+		if i%2 == 0 {
 			<-z.canEven
-			printNumber(v)
+			printNumber(i)
 			z.canZero <- 1
 		}
 	}
 }
 
 func (z *ZeroEvenOdd) Odd(printNumber func(int)) {
-	for v := 1; v <= z.n; v++ {
-		if (v % 2) != 0 {
+	for i := 1; i <= z.n; i++ {
+		if i%2 != 0 {
 			<-z.canOdd
-			printNumber(v)
+			printNumber(i)
 			z.canZero <- 1
 		}
 	}
