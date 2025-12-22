@@ -1,8 +1,8 @@
 package leetcode
 
 type Foo struct {
-	first  chan any
-	second chan any
+	secondAllow chan any
+	thirdAllow  chan any
 }
 
 /*
@@ -13,23 +13,23 @@ Design a mechanism and modify the program to ensure that second() is executed af
 */
 func NewFoo() *Foo {
 	return &Foo{
-		first:  make(chan any),
-		second: make(chan any),
+		secondAllow: make(chan any),
+		thirdAllow:  make(chan any),
 	}
 }
 
 func (f *Foo) First(printFirst func()) {
 	printFirst()
-	f.first <- 1
+	f.secondAllow <- 1
 }
 
 func (f *Foo) Second(printSecond func()) {
-	<-f.first
+	<-f.secondAllow
 	printSecond()
-	f.second <- 1
+	f.thirdAllow <- 1
 }
 
 func (f *Foo) Third(printThird func()) {
-	<-f.second
+	<-f.thirdAllow
 	printThird()
 }
