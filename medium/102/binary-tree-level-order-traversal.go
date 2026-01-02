@@ -12,8 +12,8 @@ Given the root of a binary tree, return the level order traversal of its nodes' 
 func levelOrder(root *TreeNode) [][]int {
 	res := [][]int{}
 
-	var helper func(node *TreeNode, level int)
-	helper = func(node *TreeNode, level int) {
+	var dfs func(node *TreeNode, level int)
+	dfs = func(node *TreeNode, level int) {
 		if node == nil {
 			return
 		}
@@ -24,10 +24,10 @@ func levelOrder(root *TreeNode) [][]int {
 
 		res[level] = append(res[level], node.Val)
 
-		helper(node.Left, level+1)
-		helper(node.Right, level+1)
+		dfs(node.Left, level+1)
+		dfs(node.Right, level+1)
 	}
 
-	helper(root, 0)
+	dfs(root, 0)
 	return res
 }

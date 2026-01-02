@@ -10,11 +10,12 @@ func sortColors(nums []int) {
 	var zeroCount, oneCount, twoCount int
 
 	for _, v := range nums {
-		if v == 0 {
+		switch v {
+		case 0:
 			zeroCount++
-		} else if v == 1 {
+		case 1:
 			oneCount++
-		} else {
+		default:
 			twoCount++
 		}
 	}
