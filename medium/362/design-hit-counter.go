@@ -14,7 +14,9 @@ type HitCounter struct {
 }
 
 func Constructor() HitCounter {
-	return HitCounter{}
+	return HitCounter{
+		calls: []int{},
+	}
 }
 
 func (this *HitCounter) Hit(timestamp int) {
@@ -22,13 +24,9 @@ func (this *HitCounter) Hit(timestamp int) {
 }
 
 func (this *HitCounter) GetHits(timestamp int) int {
-	var res int
-
-	for _, v := range this.calls {
-		if v >= timestamp-299 && v <= timestamp {
-			res++
-		}
+	for len(this.calls) > 0 && this.calls[0] < timestamp-299 {
+		this.calls = this.calls[1:]
 	}
 
-	return res
+	return len(this.calls)
 }
