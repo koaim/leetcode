@@ -38,7 +38,6 @@ func union(arr1, arr2 []string) []string {
 		for j := 0; j < len(arr2); j++ {
 			arr1 = append(arr1, arr1[i]+arr2[j])
 		}
-
 	}
 
 	return arr1[length:]

@@ -9,8 +9,8 @@ A sequence of n integers is called a permutation if it contains all integers fro
 */
 func findThePrefixCommonArray(A []int, B []int) []int {
 	result := make([]int, len(A))
-	var commonCount int
 	freq := map[int]int{}
+	var commonCount int
 
 	for i := 0; i < len(A); i++ {
 		freq[A[i]]++
